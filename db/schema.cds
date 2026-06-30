@@ -35,6 +35,7 @@ entity Authors : cuid, managed {
     name        : String(100);
     dateOfBirth : Date;
     dateOfDeath : Date;
+    awards     : String(255);
     epoch       : Association to Epochs;
     books       : Association to many Books
                       on books.author = $self;
